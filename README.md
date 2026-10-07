@@ -12,11 +12,11 @@
 
 ### 2: Initialize a Git repository, and commit the README and `.gitignore`
 
-<!-- No command/output needed here -- we check the repo directly. -->
+
 
 ### 3: Commit throughout the assignment
 
-<!-- No command/output needed here -- we check your commit history directly. -->
+
 
 ------------------------------------------------------------------------
 
@@ -24,15 +24,16 @@
 
 ### 4: Predict the output of `echo.sh`
 
-<!-- No need to paste the script: we'll look at scripts/echo.sh directly. -->
 
-*Answer* (prediction and reasoning for `bash scripts/echo.sh Oct07 Oct08`):
+*Answer* (prediction and reasoning for `bash scripts/echo.sh Oct07 Oct08`): This will cause an error, as the third argument ($3) is not present in the code, as Oct 07 and Oct 08 are the only arguments.
 
-*Answer* (prediction and reasoning for `bash scripts/echo.sh Oct07 Oct08 Oct09 Oct10`):
 
-*Answer* (prediction and reasoning for `bash scripts/echo.sh Oct07 Oct08 "Oct09 Oct10"`):
 
-*Answer* (prediction and reasoning for `bash scripts/echo.sh results/fastqc/*.html`):
+*Answer* (prediction and reasoning for `bash scripts/echo.sh Oct07 Oct08 Oct09 Oct10`): This will list the first three agruments, Oct 07, Oct 08, and Oct 09, and list out finished because there are three agruments and then the argument to put finished in the document. 
+
+*Answer* (prediction and reasoning for `bash scripts/echo.sh Oct07 Oct08 "Oct09 Oct10"`): This will list three agruments and finished, but Oct 9th and 10th will be listed together as they are in quotations. It will list results at the end. 
+
+*Answer* (prediction and reasoning for `bash scripts/echo.sh results/fastqc/*.html`): I believe it would list the first three files in the results directory, and the finished command.
 
 ### 5: Run `echo.sh` and compare with your predictions
 
@@ -42,7 +43,10 @@ bash scripts/echo.sh Oct07 Oct08
 
 The output of the command was:
 
-```         
+```     
+Oct07
+Oct08
+scripts/echo.sh: line 6: $3: unbound variable    
 ```
 
 ```bash
@@ -51,7 +55,11 @@ bash scripts/echo.sh Oct07 Oct08 Oct09 Oct10
 
 The output of the command was:
 
-```         
+```   
+Oct07
+Oct08
+Oct09
+Finished
 ```
 
 ```bash
@@ -60,7 +68,11 @@ bash scripts/echo.sh Oct07 Oct08 "Oct09 Oct10"
 
 The output of the command was:
 
-```         
+``` 
+Oct07
+Oct08
+Oct09 Oct10
+Finished     
 ```
 
 ```bash
@@ -69,10 +81,15 @@ bash scripts/echo.sh results/fastqc/*.html
 
 The output of the command was:
 
-```         
+```  
+results/fastqc/S63_R1_fastqc.html
+results/fastqc/S63_R2_fastqc.html
+results/fastqc/S64_R1_fastqc.html
+Finished  
 ```
 
-*Answer*: Which output (if any) differed from your prediction, and why?
+*Answer*: Which output (if any) differed from your prediction, and why? 
+They all look similar to my predictions. The script can only run the three arguments and finsihed, so if the script has less than three or more than three it will only list three. The quotation marks cause the third script Oct 09 and 10 to run together. The fourth script listed out the first three files in the results directory. 
 
 ### 6: Write the `printline.sh` script
 
