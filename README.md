@@ -127,7 +127,7 @@ Moved the last line, S68	24hpi	relictum into the file in results
 
 ### 8: Get a MultiQC container link
 
-*Answer*: The container link (URI) is:
+*Answer*: The container link (URI) is: community.wave.seqera.io/library/multiqc:1.35--c5313f6c74976ae9
 
 ### 9: MultiQC's help info, and the MultiQC command
 
