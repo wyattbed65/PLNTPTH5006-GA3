@@ -93,30 +93,32 @@ They all look similar to my predictions. The script can only run the three argum
 
 ### 6: Write the `printline.sh` script
 
-<!-- No need to paste the script: we'll look at scripts/printline.sh directly. -->
 
 ### 7: Test `printline.sh` twice
 
 Test 1:
 
 ```bash
-# Your command:
+bash scripts/printline.sh
 ```
 
 The output of the command was:
 
-```         
+``` 
+S68     24hpi   relictum  
 ```
 
 Test 2 (with redirection), and checking the contents of the output file:
 
 ```bash
-# Your command:
+
+bash scripts/printline.sh > results/metadata.tsv
 ```
 
 The output of the command that checks the file contents was:
 
-```         
+```  
+Moved the last line, S68	24hpi	relictum into the file in results       
 ```
 
 ------------------------------------------------------------------------
