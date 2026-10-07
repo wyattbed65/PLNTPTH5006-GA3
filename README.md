@@ -148,21 +148,21 @@ apptainer exec oras://community.wave.seqera.io/library/multiqc:1.35--562c547b518
  
 ### 10: Write the `multiqc.sh` script
 
-<!-- No need to paste the script: we'll look at scripts/multiqc.sh directly. -->
+
 
 ### 11: Run `multiqc.sh`
 
 Code to run the script:
 
 ```bash
-# Your command:
+bash scripts/multiqc.sh
 ```
 
-<!-- You don't need to paste the MultiQC logging output -->
 
-*Answer*: Number of FastQC reports MultiQC found:
 
-*Answer*: Does that match what you expected? Why/why not?
+*Answer*: Number of FastQC reports MultiQC found: 44 reports
+
+*Answer*: Does that match what you expected? No, there are less reports than I expected. I would have expected the exact amount of zip and html files located in the fastqc folder. 
 
 ### 12: Make `multiqc.sh` accept arguments, and rerun it
 
