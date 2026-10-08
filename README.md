@@ -239,14 +239,34 @@ No, as we should only be committing source material, not generated material from
 ### 22: Pandoc versions
 
 ```bash
-# Your command:
+pandoc -v
 ```
 
-The output of the command(s) was:
+The output of the command(s) was: 
+
+pandoc 2.14.0.3
+Compiled with pandoc-types 1.22.1, texmath 0.12.3.3, skylighting 0.10.5.2,
+citeproc 0.4.0.1, ipynb 0.1.0.1
+User data directory: /users/PAS3493/wyattbed65/.local/share/pandoc
+Copyright (C) 2006-2021 John MacFarlane. Web:  https://pandoc.org
+This is free software; see the source for copying conditions. There is no
+warranty, not even for merchantability or fitness for a particular purpose.
 
 ```         
 ```
 
-*Answer*: Is the Pandoc version available by default the most recent one?
+*Answer*: Is the Pandoc version available by default the most recent one? 
+
+The most recent version is 3.12, and the version I am using is pandoc 2.14.0.3, meaning that OSC does not provide the most recent version automatically. 
 
 *Answer*: Which Pandoc version are you using after loading the module?
+After I did module spider pandoc, I saw that pandoc 3.6.4 was the most recent version available. I loaded it in via module load pandoc/3.6.4.
+
+pandoc -v
+pandoc 3.6.4
+Features: +server +lua
+Scripting engine: Lua 5.4
+User data directory: /users/PAS3493/wyattbed65/.local/share/pandoc
+Copyright (C) 2006-2024 John MacFarlane. Web: https://pandoc.org
+This is free software; see the source for copying conditions. There is no
+warranty, not even for merchantability or fitness for a particular purpose.
