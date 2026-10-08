@@ -178,7 +178,7 @@ bash scripts/multiqc.sh results/fastqc results/multiqc
 
 ### 13: Differences between the two MultiQC runs
 
-*Answer*:
+*Answer*: The second Multiqc run created a second folder in the results/multiqc directory. The first run created multiqc_data with its matching html folder, the second run created another folder, multiqc_data_1 with the matching html file. This is likely to prevent erasing or overriding previous data sets. 
 
 ------------------------------------------------------------------------
 
