@@ -210,7 +210,7 @@ No, as we should only be committing source material, not generated material from
 
 ### 17: Install the PDF Viewer extension and view the PDF
 
-*Answer*: One observation about the rendered PDF file:
+*Answer*: One observation about the rendered PDF file: The code blocks do not show up, so it is important to differentiate in the markdown file what the code is and what the outputs are. Without labels, it is hard to determine what could be code and what is the output of the code. 
 
 ## Part E: Publish your repo on GitHub
 
