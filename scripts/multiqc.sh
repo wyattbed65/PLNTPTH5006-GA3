@@ -3,8 +3,17 @@
 set -euo pipefail
 
 #Will create directory if necessary
-mkdir -p results/multiqc
+mkdir -p "$2"
 
-#Run MultiQC
+#MultiQC Container
 
- apptainer exec oras://community.wave.seqera.io/library/multiqc:1.35--562c547b518ebe20 multiqc results/fastqc/ -o results/multiqc/ 
+CONTAINER=oras://community.wave.seqera.io/library/multiqc:1.35--562c547b518ebe20
+
+#Input and Output
+
+indir="$1"
+outdir="$2"
+
+#Run code 
+
+apptainer exec "$CONTAINER" multiqc "$1" -o "$2"

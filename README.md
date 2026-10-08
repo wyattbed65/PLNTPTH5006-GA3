@@ -166,15 +166,15 @@ bash scripts/multiqc.sh
 
 ### 12: Make `multiqc.sh` accept arguments, and rerun it
 
-<!-- No need to paste the script: we'll look at scripts/multiqc.sh and its Git history directly. -->
+
 
 Code to rerun the script:
 
 ```bash
-# Your command:
+bash scripts/multiqc.sh results/fastqc results/multiqc
 ```
 
-<!-- No need to paste any output -->
+
 
 ### 13: Differences between the two MultiQC runs
 
