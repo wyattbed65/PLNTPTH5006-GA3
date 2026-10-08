@@ -186,9 +186,9 @@ bash scripts/multiqc.sh results/fastqc results/multiqc
 
 ### 14: The structure of the Pandoc command
 
-*Answer* (options and arguments, and what each does):
+*Answer* (options and arguments, and what each does): It looks like I am able to transfer my markdown file into a PDF. The PDF is the output directory, as it has the -o command in front of it. I am transferring my markdown content into a new file. 
 
-*Answer* (how does Pandoc know which output format to produce?):
+*Answer* (how does Pandoc know which output format to produce?): The pdf extension at the end of the output location will convert the file to a pdf. 
 
 ### 15: Render your README to PDF and HTML
 
