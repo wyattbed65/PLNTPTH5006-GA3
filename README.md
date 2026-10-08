@@ -143,7 +143,7 @@ The MultiQC command to run MultiQC on `results/fastqc` with output in `results/m
 
 ```bash
 #Outdir should be after input directory to tell the command what directory is the output directory
-apptainer exec oras://community.wave.seqera.io/library/multiqc:1.35--562c547b518ebe20 results/fastqc -o results/multiqc 
+apptainer exec oras://community.wave.seqera.io/library/multiqc:1.35--562c547b518ebe20 multiqc results/fastqc/ -o results/multiqc/ 
 ```
  
 ### 10: Write the `multiqc.sh` script
