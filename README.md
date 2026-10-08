@@ -232,9 +232,9 @@ No, as we should only be committing source material, not generated material from
 
 ### 21: Explore the MultiQC report
 
-*Answer* (one insight you gained):
+*Answer* (one insight you gained): It is able to show data quality, base pair reads, GC content. It is a great tool for ensuring data quality and analyzing large amounts of reads. It also creates nice graphs and tables. I also like how it shows the top overrepresented seuqences, which you can use to compare with various reports. 
 
-*Answer* (one thing you're confused about):
+*Answer* (one thing you're confused about): I would assume these figures probably shouldn't be used to a dissertation to represent data quality, but what are the recommendations if it is allowed.
 
 ### 22: Pandoc versions
 
