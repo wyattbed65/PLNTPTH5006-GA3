@@ -199,12 +199,14 @@ pandoc -o README.pdf README.md
 - Command to render to HTML:
 
 ```bash
-# Your command:
+pandoc -o README.html README.md
 ```
 
 ### 16: Should the rendered files be committed?
 
 *Answer*: Should the rendered files be committed to your Git repo? Why/why not?
+
+No, as we should only be committing source material, not generated material from the source material. 
 
 ### 17: Install the PDF Viewer extension and view the PDF
 
